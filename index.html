@@ -1,59 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>YourBrand – Modern Experience</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <section class="hero">
-  <video autoplay muted loop playsinline class="bg-video">
-    <source src="video.mp4" type="video/mp4" />
+  <video autoplay muted loop playsinline class="video-bg">
+    <source src="video.mp4" type="video/mp4">
   </video>
-
   <div class="overlay"></div>
 
-  <header class="navbar">
-    <div class="logo">YourBrand</div>
-    <nav>
-      <a href="#features">Features</a>
-      <a href="#about">About</a>
-      <a href="#contact" class="cta">Contact</a>
-    </nav>
+  <header class="nav">
+    <div class="logo">BRAND</div>
   </header>
 
-  <div class="hero-content fade-in">
+  <div class="hero-text fade">
     <h1>Experience the Future</h1>
-    <p>High-impact design. Smooth performance. Mobile-first.</p>
-    <a href="#contact" class="primary-btn">Get Started</a>
+    <p>Design • Motion • Performance</p>
   </div>
+
+  <div class="scroll-indicator">↓</div>
 </section>
 
-<section id="features" class="section">
-  <h2>Why Choose Us</h2>
-  <div class="features">
-    <div class="card slide-up">⚡ Fast & Smooth</div>
-    <div class="card slide-up">🎬 Video Experience</div>
-    <div class="card slide-up">📱 Mobile Optimized</div>
-  </div>
+<section class="section reveal">
+  <h2>Fast</h2>
+  <p>Optimized for speed and smooth motion.</p>
 </section>
 
-<section id="about" class="section dark">
-  <h2>About YourBrand</h2>
-  <p>
-    We create visually powerful landing experiences designed to convert and impress.
-  </p>
+<section class="section dark reveal">
+  <h2>Modern</h2>
+  <p>Clean visuals inspired by premium brands.</p>
 </section>
 
-<section id="contact" class="section">
-  <h2>Contact Us</h2>
-  <form class="contact-form slide-up">
-    <input type="text" placeholder="Your Name" required />
-    <input type="email" placeholder="Your Email" required />
-    <button type="submit">Send</button>
-  </form>
+<section class="section reveal">
+  <h2>Mobile Ready</h2>
+  <p>Looks perfect on Android & iOS.</p>
 </section>
 
 <script src="script.js"></script>
