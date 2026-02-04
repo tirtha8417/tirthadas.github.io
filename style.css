@@ -1,0 +1,63 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: system-ui; }
+
+.hero { height: 100vh; position: relative; overflow: hidden; }
+.bg-video { position: absolute; width: 100%; height: 100%; object-fit: cover; }
+.overlay { position: absolute; inset: 0; background: rgba(0,0,0,.65); }
+
+.navbar {
+  position: relative; z-index: 2;
+  display: flex; justify-content: space-between;
+  padding: 20px 40px; color: #fff;
+}
+
+.logo { font-size: 24px; font-weight: 700; }
+
+.navbar a { color: #fff; margin-left: 20px; text-decoration: none; }
+.cta { border: 1px solid #fff; padding: 6px 14px; border-radius: 20px; }
+
+.hero-content {
+  position: relative; z-index: 2;
+  height: 100%; display: flex;
+  flex-direction: column; justify-content: center;
+  align-items: center; text-align: center;
+  color: #fff;
+}
+
+.primary-btn {
+  margin-top: 20px;
+  background: #ff4d4d;
+  padding: 14px 32px;
+  color: #fff; border-radius: 30px;
+  text-decoration: none;
+}
+
+.section { padding: 80px 20px; text-align: center; }
+.section.dark { background: #0f172a; color: #fff; }
+
+.features {
+  display: flex; gap: 20px;
+  justify-content: center; flex-wrap: wrap;
+}
+
+.card {
+  background: #f3f4f6;
+  padding: 30px; border-radius: 14px;
+  width: 260px;
+}
+
+.contact-form {
+  max-width: 400px; margin: auto;
+  display: flex; flex-direction: column; gap: 15px;
+}
+
+input, button { padding: 14px; font-size: 16px; }
+
+.fade-in { animation: fade 1.5s ease forwards; }
+.slide-up { opacity: 0; transform: translateY(40px); transition: .8s; }
+.slide-up.show { opacity: 1; transform: translateY(0); }
+
+@keyframes fade { from {opacity:0} to {opacity:1} }
+
+@media(max-width:768px){
+  .navbar { flex-direction: column; gap: 10px; }
+}
